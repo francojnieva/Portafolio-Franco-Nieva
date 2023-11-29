@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .menu-links {
+        @apply hover:border-b border-[#f83600] transition-all
+    }
+
+    .links-social {
+        @apply text-gray-600 text-xl md:text-2xl lg:hover:text-[#fafafa] transition-all
+    }
+
+    .about-me-container, .tech-container, .project-container, .contact-container {
+        @apply py-4 px-3 space-y-3 md:pb-10 md:px-12 xl:px-24
+    }
+
+    .section-titles {
+        @apply text-center text-[#f83600] mb-6 text-3xl font-bold md:text-4xl
+    }
+
+    .card-tech {
+        @apply m-2 py-3 px-5 space-y-2 border-[.1rem] border-[#23232b] rounded-lg transition-all lg:hover:border-white lg:py-4 lg:px-8
+    }
+
+    .footer-links {
+        @apply hover:underline hover:text-[#fafafa] transition-all
+    }
+
+    .link-CV {
+        @apply p-2 text-[#fafafa] text-sm font-medium bg-gradient-to-r from-[#f83600] to-[#fe7200] rounded-md shadow-lg shadow-[#f83600]/30
+    }
+}

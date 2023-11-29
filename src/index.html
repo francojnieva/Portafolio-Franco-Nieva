@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Franco Javier Nieva">
+    <meta name="description" content="Explora mis proyectos personales y grupales. Descubre un poco más sobre mi y mucho más.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/yo.png" type="image/x-icon">
+    <!-- TAILWIND CSS -->
+    <link href="./css/output.css" rel="stylesheet">
+    <title>Portafolio - Franco Javier Nieva</title>
+</head>
+<body class="bg-[#04070e]">
+    <header class="p-3 md:px-12 xl:px-24 xl:pt-8">
+        <!-- MENÚ MÓVIL - TABLETS -->
+        <nav class="w-full flex justify-between items-center">
+            <img src="./assets/yo.png" class="w-11 rounded-full shadow-lg shadow-[#fafafa]/10" alt="foto de perfil">
+            <button><img class="icon-[material-symbols--menu] lg:hidden text-3xl text-[#fafafa]" role="img" aria-hidden="true" /></button>
+            <!-- MENÚ LAPTOPS -->
+            <nav class="hidden lg:block">
+                <ul class="flex items-center text-[#fafafa] space-x-8 font-medium">
+                    <li><a href="#about-me" class="menu-links">Sobre mi</a></li>
+                    <li><a href="#tech" class="menu-links">Conocimientos y Tecnologías</a></li>
+                    <li><a href="#projects" class="menu-links">Proyectos</a></li>
+                    <li><a href="#contact" class="menu-links">Contacto</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <section class="px-3 flex flex-col items-center justify-between space-y-10 md:flex-row md:py-24 md:px-12 xl:px-24">
+            <div class="space-y-3 pt-3 text-center md:text-start">
+                <h1 class="text-4xl text-[#f83600] font-bold md:text-5xl lg:text-6xl xl:text-7xl">¡Hola!</h1>
+                <h2 class="text-4xl font-bold text-[#fafafa] md:text-5xl lg:text-6xl">Soy Franco Javier Nieva</h2>
+                <p class="text-gray-500 text-lg lg:text-xl xl:pt-3">Front-end Developer</p>
+                <div class="space-x-2">
+                    <a href="https://www.linkedin.com/in/francojnieva" target="_blank"><img class="icon-[mdi--linkedin] links-social" role="img" aria-hidden="true" /></a>
+                    <a href="https://github.com/francojnieva" target="_blank"><img class="icon-[mdi--github] links-social" role="img" aria-hidden="true" /></a>
+                    <a href="mailto:franco97nieva@gmail.com" target="_blank"><img class="icon-[mdi--gmail] links-social" role="img" aria-hidden="true" /></a>
+                    <a href="https://www.instagram.com/franconieva.97" target="_blank"><img class="icon-[mdi--instagram] links-social" role="img" aria-hidden="true" /></a>
+                </div>
+                <div class="pt-3">
+                    <a href="#" class="link-CV"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/yo.png" class="w-40 rounded-full shadow-lg shadow-[#fafafa]/20 md:w-56 lg:w-72 xl:w-80" alt="foto de perfil" title="Franco Javier Nieva">
+            </div>
+        </section>
+        <section id="about-me" class="about-me-container">
+            <h2 class="section-titles">Sobre mi</h2>
+            <p class="text-[#fafafa] text-center xl:text-lg">Soy de la provincia de Tucumán - Argentina. Actualmente estoy capacitandome para ser un Desarrollador Frontend ReactJS en Coder House.</p>
+            <p class="text-[#fafafa] text-center xl:text-lg">Responsable, organizado, empático. Me gusta trabajar en equipo y aprender de los demás. Siempre con la mejor disposición para la realización de mis labores. Aspiro a poder conseguir mi primer trabajo en el mundo IT que tanto me apasiona.</p>
+        </section>
+        <section id="tech" class="tech-container">
+            <h2 class="section-titles mb-7">Conocimientos y Tecnologías</h2>
+            <div id="technologiesContainer" data-aos="fade-up" class="flex justify-evenly items-center gap-3 flex-wrap text-[#fafafa]">
+                <div class="card-tech">
+                    <img src="./assets/html.svg" class="w-20" alt="icono de HTML5" title="HTML5">
+                    <h3 class=" text-center font-medium">HTML5</h3>
+                </div>
+                <div class="card-tech" >
+                    <img src="./assets/css.svg" class="w-20" alt="icono de CSS3" title="CSS3">
+                    <h3 class="text-center font-medium">CSS3</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/bootstrap-icon.svg" class="w-20" alt="icono de Bootstrap" title="Bootstrap">
+                    <h3 class="text-center font-medium">Bootstrap</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/tailwind-icon.svg" class="w-20" alt="icono de Tailwind" title="Tailwind">
+                    <h3 class="text-center font-medium">Tailwind</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/js-icon.svg" class="w-20" alt="icono de JavaScript" title="JavaScript">
+                    <h3 class="text-center font-medium">JavaScript</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/reactjs.svg" class="w-20" alt="icono de ReactJS" title="ReactJS">
+                    <h3 class="text-center font-medium">ReactJS</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/git.svg" class="w-20" alt="icono de Git" title="Git">
+                    <h3 class="text-center font-medium">Git</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/github-icon.svg" class="w-20" alt="icono de GitHub" title="GitHub">
+                    <h3 class="text-center font-medium">GitHub</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/scrum-icon.svg" class="w-20" alt="icono de Scrum" title="Scrum">
+                    <h3 class="text-center font-medium">Scrum</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/trello-icon.svg" class="w-20" alt="icono de Trello" title="Trello">
+                    <h3 class="text-center font-medium">Trello</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/slack-icon.svg" class="w-20" alt="icono de Slack" title="Slack">
+                    <h3 class="text-center font-medium">Slack</h3>
+                </div>
+                <div class="card-tech">
+                    <img src="./assets/visual-studio-code-icon.svg" class="w-20" alt="icono de VSC" title="VSC">
+                    <h3 class="text-center font-medium">VSC</h3>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="project-container">
+            <h2 class="section-titles">Proyectos</h2>
+            <div id="projectContainer"></div>
+        </section>
+        <section id="contact" class="contact-container">
+            <h2 class="section-titles">Contacto</h2>
+            <div></div>
+        </section>
+    </main>
+    <footer class="bg-[#13161b] text-[#6d6d6d] text-sm py-4 px-3 space-y-3 md:px-12 xl:px-24">
+        <div class="space-y-3 md:flex md:space-x-14 md:space-y-0 md:justify-between lg:space-x-0">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="footer-links">Sobre mi</a>
+                <a href="#" class="footer-links">Conocimientos y Tecnologías</a>
+                <a href="#" class="footer-links">Proyectos</a>
+            </div>
+            <div class="flex flex-col space-y-4 py-2 md:py-0">
+                <a href="https://www.linkedin.com/in/francojnieva" class="footer-links" target="_blank">LinkedIn</a>
+                <a href="https://github.com/francojnieva" class="footer-links" target="_blank">GitHub</a>
+                <a href="mailto:franco97nieva@gmail.com" class="footer-links" target="_blank">Gmail</a>
+                <a href="https://www.instagram.com/franconieva.97" class="footer-links" target="_blank">Instagram</a>
+            </div>
+            <div class="pt-3">
+                <a href="#" class="link-CV"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a>
+            </div>
+        </div>
+        <p class="text-[#6d6d6d] text-center text-sm pt-5">Desarrollado por Franco Javier Nieva</p>
+    </footer>
+    <script src="./js/render-projects.js"></script>
+    <script src="./js/render-technologies.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+      </script>
+</body>
+</html>
