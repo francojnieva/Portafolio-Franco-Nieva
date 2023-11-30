@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    body {
+        font-family: Poppins, sans-serif;
+    }
+}
 
 @layer components {
     .menu-links {
@@ -17,7 +24,7 @@
     }
 
     .section-titles {
-        @apply text-center text-[#f83600] mb-6 text-3xl font-bold md:text-4xl
+        @apply text-center text-[#f83600] mb-3 text-3xl font-bold md:text-4xl
     }
 
     .card-tech {
@@ -28,7 +35,19 @@
         @apply hover:underline hover:text-[#fafafa] transition-all
     }
 
-    .link-CV {
-        @apply p-2 text-[#fafafa] text-sm font-medium bg-gradient-to-r from-[#f83600] to-[#fe7200] rounded-md shadow-lg shadow-[#f83600]/30
+    .link-CV, .link-repo {
+        @apply p-2 text-[#fafafa] text-sm font-medium rounded-md
+    }
+
+    .form-contact-input-container {
+        @apply flex flex-col space-y-2
+    }
+
+    .form-contact-input {
+        @apply w-full text-xs px-2 py-3 rounded-md outline-none bg-[#090f1d] resize-none md:text-sm
+    }
+
+    .form-error {
+        @apply text-red-600 text-sm
     }
 }
