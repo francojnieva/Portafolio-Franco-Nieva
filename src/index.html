@@ -13,11 +13,11 @@
     <title>Portafolio - Franco Javier Nieva</title>
 </head>
 <body class="bg-[#04070e]">
-    <header class="p-3 md:px-12 xl:px-24 xl:pt-8">
+    <header class="p-3 relative md:px-12 xl:px-24 xl:pt-8">
         <!-- MENÚ MÓVIL - TABLETS -->
-        <nav class="w-full flex justify-between items-center">
+        <nav class="w-full  flex justify-between items-center">
             <img src="./assets/yo.png" class="w-11 rounded-full shadow-lg shadow-[#fafafa]/10" alt="foto de perfil">
-            <button><img class="icon-[material-symbols--menu] lg:hidden text-3xl text-[#fafafa]" role="img" aria-hidden="true" /></button>
+            <button id="btnMenu"><img class="icon-[material-symbols--menu] lg:hidden text-3xl text-[#fafafa]" role="img" aria-hidden="true" /></button>
             <!-- MENÚ LAPTOPS -->
             <nav class="hidden lg:block">
                 <ul class="flex items-center text-[#fafafa] space-x-8 font-medium">
@@ -27,6 +27,12 @@
                     <li><a href="#contact" class="menu-links">Contacto</a></li>
                 </ul>
             </nav>
+            <ul id="menu" class="h-screen w-full bg-black absolute top-0 right-0 pt-12 pl-3 space-y-6 flex flex-col text-[#fafafa] font-medium z-50 -left-full">
+                <li><a href="#about-me" class="menu-links">Sobre mi</a></li>
+                <li><a href="#tech class=" class="menu-links">Conocimientos y Tecnologías</a></li>
+                <li><a href="#projects" class="menu-links">Proyectos</a></li>
+                <li><a href="#contact" class="menu-links">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -165,6 +171,7 @@
     </footer>
     <script src="./js/render-projects.js"></script>
     <script src="./js/validation-form-contact.js.js"></script>
+    <script src="./js/menu-mobile.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
