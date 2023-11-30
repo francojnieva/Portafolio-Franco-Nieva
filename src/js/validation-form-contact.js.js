@@ -1,17 +1,16 @@
-const btnSubmit = document.querySelector('#btnSubmit')
-const inputName = document.querySelector('#inputName')
-const inputEmail = document.querySelector('#inputEmail')
-const inputCase = document.querySelector('#inputCase')
-const inputMessage = document.querySelector('#inputMessage')
-const errorName = document.querySelector('.error-name')
-const errorEmail = document.querySelector('.error-email')
-const errorCase = document.querySelector('.error-case')
-const errorMesagge = document.querySelector('.error-message')
-const sendMessage = document.querySelector('#sendMessage')
 
-btnSubmit.addEventListener('click', (e) => {
-    e.preventDefault()
+function validationForm() {
+    const inputName = document.querySelector('#inputName')
+    const inputEmail = document.querySelector('#inputEmail')
+    const inputCase = document.querySelector('#inputCase')
+    const inputMessage = document.querySelector('#inputMessage')
+    const errorName = document.querySelector('.error-name')
+    const errorEmail = document.querySelector('.error-email')
+    const errorCase = document.querySelector('.error-case')
+    const errorMesagge = document.querySelector('.error-message')
+    const sendMessage = document.querySelector('#sendMessage')
 
+    
     if (inputName.value === '') {
         errorName.textContent = 'Campo requerido.'
         return false
@@ -66,15 +65,6 @@ btnSubmit.addEventListener('click', (e) => {
     }
 
     sendMessage.textContent = 'Enviado. Muchas gracias.'
+}
 
-    inputName.value.textContent = ''
-    inputEmail.value.textContent = ''
-    inputCase.value.textContent = ''
-    inputMessage.value.textContent = ''
 
-    setTimeout(() => {
-        const form = document.getElementById('form')
-        sendMessage.textContent = ''
-        form.submit()
-    }, 2000)
-})
