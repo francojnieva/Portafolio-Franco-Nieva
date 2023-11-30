@@ -115,29 +115,30 @@
             <h2 class="section-titles">Contacto</h2>
             <p class="text-white mb-3 text-center">Complete el siguiente formulario y me pondré en contacto lo antes posible. ¡Muchas gracias!.</p>
             <div class="px-3 md:px-12 xl:px-24">
-                <form action="#" method="post" class="text-[#fafafa] space-y-5 py-4 text-sm">
+                <form method="post" id="form" class="text-[#fafafa] space-y-5 py-4 text-sm">
                     <div class="form-contact-input-container">
-                        <label for="name">Nombre:</label>
-                        <input type="text" class="form-contact-input" name="name" id="name" placeholder="Ingrese su nombre" maxlength="25" autocomplete="off">
-                        <p class="form-error"></p>
+                        <label for="inputName">Nombre:</label>
+                        <input type="text" class="form-contact-input" name="name" id="inputName" placeholder="Ingrese su nombre" minlength="3" maxlength="25" autocomplete="off">
+                        <p class="error-name"></p>
                     </div>
                     <div class="form-contact-input-container">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" class="form-contact-input" name="email" id="email" placeholder="Ingrese su correo electrónico" autocomplete="off">
-                        <p class="form-error"></p>
+                        <label for="inputEmail">Correo electrónico:</label>
+                        <input type="email" class="form-contact-input" name="email" id="inputEmail" placeholder="Ingrese su correo electrónico" autocomplete="off">
+                        <p class="error-email"></p>
                     </div>
                     <div class="form-contact-input-container">
-                        <label for="case">Asunto:</label>
-                        <input type="text" class="form-contact-input" name="case" id="case" placeholder="Ingrese su asunto" maxlength="30" autocomplete="off">
-                        <p class="form-error"></p>
+                        <label for="inputCase">Asunto:</label>
+                        <input type="text" class="form-contact-input" name="case" id="inputCase" placeholder="Ingrese su asunto" minlength="3" maxlength="30" autocomplete="off">
+                        <p class="error-case"></p>
                     </div>
                     <div class="flex flex-col space-y-2">
-                        <label for="message">Mensaje:</label>
-                        <textarea name="message" id="message" class="form-contact-input" cols="30" rows="10" placeholder="Ingrese su mensaje" maxlength="250" autocomplete="off"></textarea>
-                        <p class="form-error"></p>
+                        <label for="inputMessage">Mensaje:</label>
+                        <textarea name="message" id="inputMessage" class="form-contact-input" cols="30" rows="10" placeholder="Ingrese su mensaje" minlength="3" maxlength="250" autocomplete="off"></textarea>
+                        <p class="error-message"></p>
                     </div>
+                    <p id="sendMessage" class="text-green-600 text-center rounded-md font-medium"></p>
                     <div>
-                        <input type="submit" class="cursor-pointer py-2 px-4 bg-gray-700 rounded-md shadow-md shadow-[#fff]/10" value="Enviar">
+                        <input id="btnSubmit" type="submit" class="cursor-pointer py-2 px-4 bg-gray-700 rounded-md shadow-md shadow-[#fff]/10" value="Enviar">
                     </div>
                 </form>
             </div>
@@ -163,6 +164,7 @@
         <p class="text-[#6d6d6d] text-center text-sm pt-5">Desarrollado por Franco Javier Nieva</p>
     </footer>
     <script src="./js/render-projects.js"></script>
+    <script src="./js/validation-form-contact.js.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({

@@ -30,7 +30,7 @@ const projects = [
     {
         name: 'Portafolio',
         description: '',
-        image: '',
+        image: './assets/portafolio.png',
         textAlt: 'imagen de portada de Portafolio',
         titleImg: 'Portafolio',
         technologies: [

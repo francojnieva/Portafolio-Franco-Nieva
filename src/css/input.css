@@ -44,10 +44,10 @@
     }
 
     .form-contact-input {
-        @apply w-full text-xs px-2 py-3 rounded-md outline-none bg-[#090f1d] resize-none md:text-sm
+        @apply w-full text-xs text-gray-300 px-2 py-3 rounded-md outline-none bg-[#090f1d] resize-none md:text-sm
     }
 
-    .form-error {
+    .error-name, .error-email, .error-case, .error-message {
         @apply text-red-600 text-sm
     }
 }
