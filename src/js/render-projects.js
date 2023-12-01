@@ -92,7 +92,7 @@ function renderProjects() {
         const { name, description, image, textAlt, titleImg, technologies, repo } = project
         const card = document.createElement('div')
         card.innerHTML = `
-            <div class="card w-72 bg-base-100 mb-3 xl:w-80" data-aos="flip-right">
+            <div class="card w-72 bg-base-100 mb-3 border border-gray-600 xl:w-80" data-aos="flip-right">
                 <figure>
                     <img src=${image} title=${titleImg} alt=${textAlt}/>
                 </figure>

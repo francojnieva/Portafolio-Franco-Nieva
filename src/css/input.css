@@ -20,11 +20,11 @@
     }
 
     .about-me-container, .tech-container, .project-container, .contact-container {
-        @apply py-4 px-3 space-y-3 md:pb-10 md:px-12 xl:px-24
+        @apply py-5 px-3 space-y-3 md:pb-10 md:px-12 xl:px-24
     }
 
     .section-titles {
-        @apply text-center text-[#f83600] mb-3 text-3xl font-bold md:text-4xl
+        @apply text-center text-[#f83600] mb-4 pt-12 text-3xl font-bold md:text-4xl
     }
 
     .card-tech {

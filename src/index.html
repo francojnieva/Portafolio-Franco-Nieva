@@ -12,31 +12,35 @@
     <link href="./css/output.css" rel="stylesheet">
     <title>Portafolio - Franco Javier Nieva</title>
 </head>
-<body class="bg-[#04070e]">
-    <header class="p-3 relative md:px-12 xl:px-24 xl:pt-8">
-        <!-- MENÚ MÓVIL - TABLETS -->
-        <nav class="w-full  flex justify-between items-center">
-            <img src="./assets/yo.png" class="w-11 rounded-full shadow-lg shadow-[#fafafa]/10" alt="foto de perfil">
-            <button id="btnMenu"><img class="icon-[material-symbols--menu] lg:hidden text-3xl text-[#fafafa]" role="img" aria-hidden="true" /></button>
-            <!-- MENÚ LAPTOPS -->
-            <nav class="hidden lg:block">
-                <ul class="flex items-center text-[#fafafa] space-x-8 font-medium">
-                    <li><a href="#about-me" class="menu-links">Sobre mi</a></li>
-                    <li><a href="#tech" class="menu-links">Conocimientos y Tecnologías</a></li>
-                    <li><a href="#projects" class="menu-links">Proyectos</a></li>
-                    <li><a href="#contact" class="menu-links">Contacto</a></li>
+<body class="bg-[#05050f]">
+    <header class="w-full flex flex-col">
+        <section class="bg-[#1b1f25] fixed top-0 flex items-center justify-between w-full p-3 md:px-12 lg:pt-5 z-30">
+            <a href="#home"><img src="./assets/yo.png" class="w-10 rounded-full" alt="foto de perfil"></a>
+            <button id="btnMenu" class="text-white text-3xl lg:hidden">
+                <img id="imgMenu" class="icon-[material-symbols--menu]" role="img" aria-hidden="true" />
+                <img id="imgCloseMenu" class="icon-[material-symbols--close-rounded] hidden" role="img" aria-hidden="true" />
+            </button>
+            <nav class="text-[#fafafa] hidden lg:block">
+                <ul class="flex items-center space-x-10">
+                    <li><a href="#about-me">Sobre mi</a></li>
+                    <li><a href="#tech">Conocimientos y Tecnologías</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
-            <ul id="menu" class="h-screen w-full bg-black absolute top-0 right-0 pt-12 pl-3 space-y-6 flex flex-col text-[#fafafa] font-medium z-50 -left-full">
-                <li><a href="#about-me" class="menu-links">Sobre mi</a></li>
-                <li><a href="#tech class=" class="menu-links">Conocimientos y Tecnologías</a></li>
-                <li><a href="#projects" class="menu-links">Proyectos</a></li>
-                <li><a href="#contact" class="menu-links">Contacto</a></li>
+        </section>
+        <nav id="navbarMobile" class="px-3 pt-16 fixed -top-full transition-all w-full lg:hidden md:px-12 bg-[#1b1f25] z-20">
+            <ul class="space-y-6 py-4 text-[#fafafa]">
+                <li><a class="link-menu" href="#about-me">Sobre mi</a></li>
+                <li><a class="link-menu" href="#tech">Conocimientos y Tecnologías</a></li>
+                <li><a class="link-menu" href="#projects">Proyectos</a></li>
+                <li><a class="link-menu" href="#contact">Contacto</a></li>
+                <li><a download href="#" class="link-CV text-xs bg-gradient-to-r from-[#f83600] to-[#fe7200] shadow-lg shadow-[#f83600]/30"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="px-3 flex flex-col items-center justify-between space-y-10 md:flex-row md:py-24 md:px-12 xl:px-24">
+        <section id="home" class="px-3 pt-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:py-28 md:pt-32 lg:py-36 md:px-12 xl:px-24">
             <div class="space-y-3 pt-3 text-center md:text-start">
                 <h1 class="text-4xl text-[#f83600] font-bold md:text-5xl lg:text-6xl xl:text-7xl">¡Hola!</h1>
                 <h2 class="text-4xl font-bold text-[#fafafa] md:text-5xl lg:text-6xl">Soy Franco Javier Nieva</h2>
@@ -121,25 +125,25 @@
             <h2 class="section-titles">Contacto</h2>
             <p class="text-white mb-3 text-center">Complete el siguiente formulario y me pondré en contacto lo antes posible. ¡Muchas gracias!.</p>
             <div class="px-3 md:px-12 xl:px-24">
-                <form name="contact" method="POST" netlify class="text-[#fafafa] space-y-5 py-4 text-sm" onsubmit=" return validationForm()">
+                <form name="contact" netlify class="text-[#fafafa] space-y-5 py-4 text-sm" onsubmit="return validationForm()">
                     <div class="form-contact-input-container">
                         <label for="inputName">Nombre:</label>
-                        <input type="text" class="form-contact-input" name="name" id="inputName" placeholder="Ingrese su nombre" minlength="3" maxlength="25" autocomplete="off">
+                        <input type="text" class="form-contact-input" name="name" id="inputName" required placeholder="Ingrese su nombre" minlength="3" maxlength="25" autocomplete="off">
                         <p class="error-name"></p>
                     </div>
                     <div class="form-contact-input-container">
                         <label for="inputEmail">Correo electrónico:</label>
-                        <input type="email" class="form-contact-input" name="email" id="inputEmail" placeholder="Ingrese su correo electrónico" autocomplete="off">
+                        <input type="email" class="form-contact-input" name="email" id="inputEmail" required placeholder="Ingrese su correo electrónico" autocomplete="off">
                         <p class="error-email"></p>
                     </div>
                     <div class="form-contact-input-container">
                         <label for="inputCase">Asunto:</label>
-                        <input type="text" class="form-contact-input" name="case" id="inputCase" placeholder="Ingrese su asunto" minlength="3" maxlength="30" autocomplete="off">
+                        <input type="text" class="form-contact-input" name="case" id="inputCase" required placeholder="Ingrese su asunto" minlength="3" maxlength="30" autocomplete="off">
                         <p class="error-case"></p>
                     </div>
                     <div class="flex flex-col space-y-2">
                         <label for="inputMessage">Mensaje:</label>
-                        <textarea name="message" id="inputMessage" class="form-contact-input" cols="30" rows="10" placeholder="Ingrese su mensaje" minlength="3" maxlength="250" autocomplete="off"></textarea>
+                        <textarea name="message" id="inputMessage" class="form-contact-input" cols="30" rows="10" required placeholder="Ingrese su mensaje" minlength="3" maxlength="250" autocomplete="off"></textarea>
                         <p class="error-message"></p>
                     </div>
                     <p id="sendMessage" class="text-green-600 text-center rounded-md font-medium"></p>
@@ -153,9 +157,9 @@
     <footer class="bg-[#13161b] text-[#6d6d6d] text-sm py-4 px-3 space-y-3 md:px-12 xl:px-24">
         <div class="space-y-3 md:flex md:space-x-14 md:space-y-0 md:justify-between lg:space-x-0">
             <div class="flex flex-col space-y-4">
-                <a href="#" class="footer-links">Sobre mi</a>
-                <a href="#" class="footer-links">Conocimientos y Tecnologías</a>
-                <a href="#" class="footer-links">Proyectos</a>
+                <a href="#about-me" class="footer-links">Sobre mi</a>
+                <a href="#tech" class="footer-links">Conocimientos y Tecnologías</a>
+                <a href="#projects" class="footer-links">Proyectos</a>
             </div>
             <div class="flex flex-col space-y-4 py-2 md:py-0">
                 <a href="https://www.linkedin.com/in/francojnieva" class="footer-links" target="_blank">LinkedIn</a>
