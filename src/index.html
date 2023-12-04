@@ -14,7 +14,7 @@
 </head>
 <body class="bg-[#05050f]">
     <header class="w-full flex flex-col">
-        <section class="bg-[#1b1f25] fixed top-0 flex items-center justify-between w-full p-3 md:px-12 lg:pt-5 z-30">
+        <section class="bg-[#1b1f25] fixed top-0 flex items-center justify-between w-full p-3 md:px-12 lg:pt-5 xl:px-24 z-30">
             <a href="#home"><img src="./assets/yo.png" class="w-10 rounded-full" alt="foto de perfil"></a>
             <button id="btnMenu" class="text-white text-3xl lg:hidden">
                 <img id="imgMenu" class="icon-[material-symbols--menu]" role="img" aria-hidden="true" />
@@ -35,14 +35,14 @@
                 <li><a class="link-menu" href="#tech">Conocimientos y Tecnologías</a></li>
                 <li><a class="link-menu" href="#projects">Proyectos</a></li>
                 <li><a class="link-menu" href="#contact">Contacto</a></li>
-                <li><a download href="#" class="link-CV text-xs bg-gradient-to-r from-[#f83600] to-[#fe7200] shadow-lg shadow-[#f83600]/30"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a></li>
+                <li><a download href="./assets/Curriculum Vitae - Franco Javier Nieva.pdf" class="link-CV text-xs bg-gradient-to-r from-[#f83600] to-[#fe7200] shadow-lg shadow-[#f83600]/30"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="home" class="px-3 pt-20 flex flex-col items-center justify-between space-y-10 md:flex-row md:py-28 md:pt-32 lg:py-36 md:px-12 xl:px-24">
             <div class="space-y-3 pt-3 text-center md:text-start">
-                <h1 class="text-4xl text-[#f83600] font-bold md:text-5xl lg:text-6xl xl:text-7xl">¡Hola!</h1>
+                <h1 class="text-4xl bg-gradient-to-r from-[#f83600] to-[#fe7200] text-transparent bg-clip-text font-extrabold md:text-5xl lg:text-6xl xl:text-7xl">¡Hola!</h1>
                 <h2 class="text-4xl font-bold text-[#fafafa] md:text-5xl lg:text-6xl">Soy Franco Javier Nieva</h2>
                 <p class="text-gray-500 text-lg lg:text-xl xl:pt-3">Front-end Developer</p>
                 <div class="space-x-2">
@@ -52,7 +52,7 @@
                     <a href="https://www.instagram.com/franconieva.97" target="_blank"><img class="icon-[mdi--instagram] links-social" role="img" aria-hidden="true" /></a>
                 </div>
                 <div class="pt-3">
-                    <a download href="#" class="link-CV bg-gradient-to-r from-[#f83600] to-[#fe7200] shadow-lg shadow-[#f83600]/30"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a>
+                    <a download href="./assets/Curriculum Vitae - Franco Javier Nieva.pdf" class="link-CV bg-gradient-to-r from-[#f83600] to-[#fe7200] shadow-lg shadow-[#f83600]/30"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a>
                 </div>
             </div>
             <div class="pb-5">
@@ -61,11 +61,12 @@
         </section>
         <section id="about-me" class="about-me-container">
             <h2 class="section-titles">Sobre mi</h2>
-            <p class="text-[#fafafa] text-center xl:text-lg">Soy de la provincia de Tucumán - Argentina. Actualmente estoy capacitandome para ser un Desarrollador Frontend ReactJS en Coder House.</p>
-            <p class="text-[#fafafa] text-center xl:text-lg">Responsable, organizado, empático. Me gusta trabajar en equipo y aprender de los demás. Siempre con la mejor disposición para la realización de mis labores. Aspiro a poder conseguir mi primer trabajo en el mundo IT que tanto me apasiona.</p>
+            <p>Soy de la provincia de Tucumán, Argentina. Actualmente estoy cursando ReactJS Avanzado en Coder House.</p>
+            <p>Responsable, organizado, empático. Me gusta trabajar en equipo y aprender de los demás. Creo que la colaboración es fundamental para el crecimiento profesional y personal. Siempre con la mejor disposición para realizar mis labores.</p>
+            <p>Mi objetivo actual es materializar mi pasión por la tecnología en el campo laboral. Aspiro a obtener mi primer trabajo en el mundo de la tecnología de la información. <br> Estoy ansioso por enfrentar nuevos desafíos y continuar mi camino en la industria del desarrollo web.</p>
         </section>
         <section id="tech" class="tech-container">
-            <h2 class="section-titles mb-4">Conocimientos y Tecnologías</h2>
+            <h2 class="section-titles pb-1">Conocimientos y Tecnologías</h2>
             <div id="technologiesContainer" data-aos="fade-up" class="flex justify-evenly items-center gap-3 flex-wrap text-[#fafafa]">
                 <div class="card-tech">
                     <img src="./assets/html.svg" class="w-20" alt="icono de HTML5" title="HTML5">
@@ -118,14 +119,14 @@
             </div>
         </section>
         <section id="projects" class="project-container">
-            <h2 class="section-titles mb-5 xl:mb-6">Proyectos</h2>
+            <h2 class="section-titles">Proyectos</h2>
             <div id="projectContainer" class="flex justify-evenly items-center flex-wrap gap-3"></div>
         </section>
         <section id="contact" class="contact-container">
             <h2 class="section-titles">Contacto</h2>
-            <p class="text-white mb-3 text-center">Complete el siguiente formulario y me pondré en contacto lo antes posible. ¡Muchas gracias!.</p>
+            <p class="text-[#fafafa] mb-3 text-center">Complete el siguiente formulario y me pondré en contacto lo antes posible. ¡Muchas gracias!.</p>
             <div class="px-3 md:px-12 xl:px-24">
-                <form name="contact" netlify class="text-[#fafafa] space-y-5 py-4 text-sm" onsubmit="return validationForm()">
+                <form action="#" name="contact" netlify class="text-[#fafafa] space-y-5 py-4 text-sm" onsubmit="return validationForm()">
                     <div class="form-contact-input-container">
                         <label for="inputName">Nombre:</label>
                         <input type="text" class="form-contact-input" name="name" id="inputName" required placeholder="Ingrese su nombre" minlength="3" maxlength="25" autocomplete="off">
@@ -160,6 +161,7 @@
                 <a href="#about-me" class="footer-links">Sobre mi</a>
                 <a href="#tech" class="footer-links">Conocimientos y Tecnologías</a>
                 <a href="#projects" class="footer-links">Proyectos</a>
+                <a href="#contact" class="footer-links">Contacto</a>
             </div>
             <div class="flex flex-col space-y-4 py-2 md:py-0">
                 <a href="https://www.linkedin.com/in/francojnieva" class="footer-links" target="_blank">LinkedIn</a>
@@ -168,10 +170,10 @@
                 <a href="https://www.instagram.com/franconieva.97" class="footer-links" target="_blank">Instagram</a>
             </div>
             <div class="pt-3">
-                <a download href="#" class="link-CV bg-gradient-to-r from-[#f83600] to-[#fe7200] shadow-lg shadow-[#f83600]/30"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a>
+                <a download href="./assets/Curriculum Vitae - Franco Javier Nieva.pdf" class="link-CV bg-gradient-to-r from-[#f83600] to-[#fe7200] shadow-lg shadow-[#f83600]/30"><img class="icon-[mdi--card-account-details] text-xl text-[#fafafa]" role="img" aria-hidden="true" /> Descargar CV</a>
             </div>
         </div>
-        <p class="text-[#6d6d6d] text-center text-sm pt-5">Desarrollado por Franco Javier Nieva</p>
+        <p class="text-[#6d6d6d] text-center text-xs pt-5">Desarrollado por Franco Javier Nieva</p>
     </footer>
     <script src="./js/render-projects.js"></script>
     <script src="./js/validation-form-contact.js.js"></script>

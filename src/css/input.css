@@ -16,15 +16,19 @@
     }
 
     .links-social {
-        @apply text-gray-600 text-xl md:text-2xl lg:hover:text-[#fafafa] transition-all
+        @apply text-gray-600 text-2xl lg:hover:text-[#fafafa] transition-all
     }
 
     .about-me-container, .tech-container, .project-container, .contact-container {
         @apply py-5 px-3 space-y-3 md:pb-10 md:px-12 xl:px-24
     }
 
+    .about-me-container p {
+        @apply text-[#e7e7e7] text-center xl:text-lg
+    }
+
     .section-titles {
-        @apply text-center text-[#f83600] mb-4 pt-12 text-3xl font-bold md:text-4xl
+        @apply text-center bg-gradient-to-r from-[#f83600]  to-[#fe7200] text-transparent bg-clip-text mb-4 pt-12 text-3xl font-extrabold md:text-4xl
     }
 
     .card-tech {
@@ -44,7 +48,7 @@
     }
 
     .form-contact-input {
-        @apply w-full text-xs text-gray-300 px-2 py-3 rounded-md outline-none bg-[#090f1d] resize-none md:text-sm
+        @apply w-full text-xs text-gray-300 px-2 py-3 rounded-md outline-none bg-[#0d1529] resize-none md:text-sm
     }
 
     .error-name, .error-email, .error-case, .error-message {
