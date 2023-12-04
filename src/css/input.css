@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: Poppins, sans-serif;
+    }
+}
+
+@layer components {
+    .menu-links {
+        @apply hover:border-b border-[#f83600] transition-all
+    }
+
+    .links-social {
+        @apply text-gray-600 text-2xl lg:hover:text-[#fafafa] transition-all
+    }
+
+    .about-me-container, .tech-container, .project-container, .contact-container {
+        @apply py-5 px-3 space-y-3 md:pb-10 md:px-12 xl:px-24
+    }
+
+    .about-me-container p {
+        @apply text-[#e7e7e7] text-center xl:text-lg
+    }
+
+    .section-titles {
+        @apply text-center bg-gradient-to-r from-[#f83600]  to-[#fe7200] text-transparent bg-clip-text mb-4 pt-12 text-3xl font-extrabold md:text-4xl
+    }
+
+    .card-tech {
+        @apply m-2 py-3 px-5 space-y-2 border-[.1rem] border-[#23232b] rounded-lg transition-all lg:hover:border-white lg:py-4 lg:px-8
+    }
+
+    .footer-links {
+        @apply hover:underline hover:text-[#fafafa] transition-all
+    }
+
+    .link-CV, .link-repo {
+        @apply p-2 text-[#fafafa] text-sm font-medium rounded-md
+    }
+
+    .form-contact-input-container {
+        @apply flex flex-col space-y-2
+    }
+
+    .form-contact-input {
+        @apply w-full text-xs text-gray-300 px-2 py-3 rounded-md outline-none bg-[#0d1529] resize-none md:text-sm
+    }
+
+    .error-name, .error-email, .error-case, .error-message {
+        @apply text-red-600 text-sm
+    }
+}
