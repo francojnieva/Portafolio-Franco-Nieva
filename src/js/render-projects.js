@@ -1,7 +1,7 @@
 const projects = [
     {
         name: 'MotoFly',
-        description: 'E-commerce desarrollado por 5 integrantes durante el curso de Desarrollo Full Stack en Rolling Code School. Además del stack MERN, usamos Git para controlar versiones de código, Trello para gestionar tareas y SCRUM como marco de trabajo ágil.',
+        description: 'E-commerce desarrollado por 5 integrantes durante el curso en Rolling Code School. Además del stack MERN, usamos Git para controlar versiones de código, Trello para gestionar tareas y SCRUM como marco de trabajo ágil.',
         image: './assets/motofly.png',
         textAlt: 'imagen de portada de MotoFly',
         titleImg: 'MotoFly',
@@ -70,6 +70,20 @@ const projects = [
         repo: 'https://github.com/francojnieva/Dashboard-Food.git'
     },
     {
+        name: 'ClimaApp',
+        description: 'Con este proyecto puedes obtener información climática de las ciudades del mundo a través de la API de OpenWeatherMap. Puedes ver la temperatura actual, la sensación térmica, la temp. máxima y mínima y la humedad.',
+        image: './assets/climaapp.png',
+        textAlt: 'imagen de portada del proyecto ClimaApp',
+        titleImg: 'ClimaApp',
+        technologies: [
+            './assets/html.svg',
+            './assets/bootstrap-icon.svg',
+            './assets/js-icon.svg',
+            './assets/git.svg',
+        ],
+        repo: 'https://github.com/francojnieva/app-clima.git'
+    },
+    {
         name: 'Clon Netflix',
         description: 'Proyecto realizado con el propósito de recrear la página principal y de inicio de sesión de Netflix con Tailwind CSS. Además de poder visualizar el sitio en dispositivos grandes, tambíen puede verse en dispositivos móviles y tablets.',
         image: './assets/clon-netflix.png',
@@ -100,7 +114,7 @@ function renderProjects() {
                     <h2 class="card-title">${name}</h2>
                     <p class="text-gray-400">${description}</p>
                     <div class="flex flex-col items-center pt-5 md:flex-row justify-between">
-                        <a href="${repo}" target="_blank" class="link-repo rounded-md bg-gray-600 shadow-md shadow-[#fff]/10"><img class="icon-[mdi--github] text-lg" role="img" aria-hidden="true" /> Repositorio</a>
+                        <a href="${repo}" target="_blank" class="link-repo rounded-lg bg-gray-600 shadow-md shadow-[#fff]/10"><img class="icon-[mdi--github] text-lg" role="img" aria-hidden="true" /> Repositorio</a>
                         <div class="flex items-center mt-4 space-x-2 md:mt-0">
                             <img src=${technologies[0]} class="w-6 transition-all hover:-translate-y-1">
                             <img src=${technologies[1]} class="w-6 transition-all hover:-translate-y-1">
