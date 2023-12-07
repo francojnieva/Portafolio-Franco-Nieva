@@ -5,6 +5,7 @@
     "tailwindcss": "^3.3.5"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.149"
+    "@iconify/json": "^2.2.149",
+    "tailwind-scrollbar": "^3.0.5"
   }
 }
