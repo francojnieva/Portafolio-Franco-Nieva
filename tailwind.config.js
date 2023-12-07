@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     addDynamicIconSelectors(),
     require("daisyui"),
+    require('tailwind-scrollbar') ({ nocompatible: true })
   ],
 }
 
