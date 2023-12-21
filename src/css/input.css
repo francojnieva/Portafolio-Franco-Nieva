@@ -11,7 +11,7 @@
 }
 
 @layer components {
-    .menu-links {
+    .link-menu {
         @apply hover:border-b border-[#f83600] transition-all
     }
 
