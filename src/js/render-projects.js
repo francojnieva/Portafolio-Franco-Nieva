@@ -84,6 +84,20 @@ const projects = [
         repo: 'https://github.com/francojnieva/app-clima.git'
     },
     {
+        name: 'Salud Integral Psi',
+        description: 'Desarrollado para un equipo interdisciplinario en el Área de Salud y Salud Mental en el Sistema público y privado. Asesoran y capacitan en Salud Mental, Discapacidad Intelectual y Rehabilitación Psicosocial a instituciones, empresas, profesionales y técnicos.',
+        image: './assets/salud-integral.png',
+        textAlt: 'imagen de portada del proyecto Salud Integral Psi',
+        titleImg: 'Salud Integral Psi',
+        technologies: [
+            './assets/reactjs.svg',
+            './assets/tailwind-icon.svg',
+            './assets/git.svg',
+            './assets/github-icon.svg',
+        ],
+        repo: 'https://github.com/francojnieva/Salud-Integral-Psi.git'
+    },
+    {
         name: 'Clon Netflix',
         description: 'Proyecto realizado con el propósito de recrear la página principal y de inicio de sesión de Netflix con Tailwind CSS. Además de poder visualizar el sitio en dispositivos grandes, tambíen puede verse en dispositivos móviles y tablets.',
         image: './assets/clon-netflix.png',
