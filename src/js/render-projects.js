@@ -85,7 +85,7 @@ const projects = [
     },
     {
         name: 'Salud Integral Psi',
-        description: 'Desarrollado para un equipo interdisciplinario en el Área de Salud y Salud Mental en el Sistema público y privado. Asesoran y capacitan en Salud Mental, Discapacidad Intelectual y Rehabilitación Psicosocial a instituciones, empresas, profesionales y técnicos.',
+        description: 'Desarrollado para un equipo interdisciplinario en el Área de Salud y Salud Mental en el Sistema público y privado. Asesoran y capacitan en Salud Mental, Discapacidad Intelectual y Rehabilitación Psicosocial.',
         image: './assets/salud-integral.png',
         textAlt: 'imagen de portada del proyecto Salud Integral Psi',
         titleImg: 'Salud Integral Psi',
@@ -128,7 +128,7 @@ function renderProjects() {
                     <h2 class="card-title">${name}</h2>
                     <p class="text-gray-400">${description}</p>
                     <div class="flex flex-col items-center pt-5 md:flex-row justify-between">
-                        <a href="${repo}" target="_blank" class="link-repo rounded-lg bg-gray-600 shadow-md shadow-[#fff]/10"><img class="icon-[mdi--github] text-lg" role="img" aria-hidden="true" /> Repositorio</a>
+                        <a href="${repo}" target="_blank" class="link-repo rounded-lg bg-gray-600"><img class="icon-[mdi--github] text-lg" role="img" aria-hidden="true" /> Repositorio</a>
                         <div class="flex items-center mt-4 space-x-2 md:mt-0">
                             <img src=${technologies[0]} class="w-6 transition-all hover:-translate-y-1">
                             <img src=${technologies[1]} class="w-6 transition-all hover:-translate-y-1">
