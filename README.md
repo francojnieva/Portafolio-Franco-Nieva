@@ -4,7 +4,7 @@
 ## Descripción
 ¡Bienvenido a mi portafolio personal! Este proyecto fue desarrollado con HTML5, Tailwind CSS y JavaScript, con el objetivo de proporcionar una visión completa sobre quién soy como desarrollador frontend. Aquí encontrarás información sobre mí, mis habilidades, proyectos personales y grupales, así como la posibilidad de ponerse en contacto conmigo.
 
-## Tecnologías
+## Tecnologías utilizadas
 ![Static Badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=%23fff)
 ![Static Badge](https://img.shields.io/badge/tailwind%20css-06B6D4?style=for-the-badge&logo=tailwind%20css&logoColor=%23fff)
 ![Static Badge](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=%23000)
