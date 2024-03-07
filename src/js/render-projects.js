@@ -28,18 +28,18 @@ const projects = [
         repo: 'https://github.com/ErikaCV/proyecto-final.git'
     },
     {
-        name: 'Dashboard Tienda',
-        description: 'Con este proyecto puse en práctica mis habilidades de maquetación y diseño con Tailwind CSS. Sigo un diseño de autor, el mismo no cuenta con formato móvil y tablet, por lo que implemento un estilo y un layout responsivo.',
-        image: './assets/dashborad-tienda.png',
-        textAlt: 'imagen de portada de Dashboard Tienda de Comida',
-        titleImg: 'Dashboard Tienda de Comida',
+        name: 'Movie Pulse',
+        description: 'Aplicación que permite a los usuarios crear cuentas, iniciar sesión, explorar información sobre las películas y agregarlas a favoritos. Desarrollada por un equipo multidisciplinario durante la simulación laboral en No Country.',
+        image: './assets/movie-pulse.png',
+        textAlt: 'imagen de portada de Movie Pulse',
+        titleImg: 'Movie Pulse',
         technologies: [
-            './assets/html.svg',
+            './assets/reactjs.svg',
             './assets/tailwind-icon.svg',
-            './assets/js-icon.svg',
             './assets/git.svg',
+            './assets/trello-icon.svg',
         ],
-        repo: 'https://github.com/francojnieva/Dashboard-Food.git'
+        repo: 'https://github.com/No-Country/C16-39-m-java.git'
     },
     {
         name: 'Portafolio Personal',
@@ -56,18 +56,18 @@ const projects = [
         repo: 'https://github.com/francojnieva/Portafolio-Franco-Nieva.git'
     },
     {
-        name: 'MovieApp',
-        description: 'Proyecto ideal para buscar tus películas favoritas y conocer más sobre ellas. Con MovieApp puedes conocer las películas más populares que hay en el mundo, las mejores clasificadas y descrubrir los próximos estrenos.',
-        image: './assets/movie-app.png',
-        textAlt: 'imagen de portada de MovieApp',
-        titleImg: 'MovieApp',
+        name: 'Dashboard Tienda',
+        description: 'Con este proyecto puse en práctica mis habilidades de maquetación y diseño con Tailwind CSS. Sigo un diseño de autor, el mismo no cuenta con formato móvil y tablet, por lo que implemento un estilo y un layout responsivo.',
+        image: './assets/dashborad-tienda.png',
+        textAlt: 'imagen de portada de Dashboard Tienda de Comida',
+        titleImg: 'Dashboard Tienda de Comida',
         technologies: [
             './assets/html.svg',
             './assets/tailwind-icon.svg',
             './assets/js-icon.svg',
             './assets/git.svg',
         ],
-        repo: 'https://github.com/francojnieva/movie-series-app.git'
+        repo: 'https://github.com/francojnieva/Dashboard-Food.git'
     },
     {
         name: 'ClimaApp',
