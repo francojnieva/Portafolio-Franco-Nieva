@@ -28,6 +28,20 @@ const projects = [
         repo: 'https://github.com/ErikaCV/proyecto-final.git'
     },
     {
+        name: 'Clon Spotify Web',
+        description: 'Este proyecto es un clon de la versión web de Spotify, desarrollado con React.js y Tailwind CSS. Utiliza la API web proporcionada por Spotify para obtener datos como artistas populares, álbumes populares, canciones y más.',
+        image: './assets/spotify.png',
+        textAlt: 'imagen de portada del Clon Spotify Web',
+        titleImg: 'Clon Spotify Web',
+        technologies: [
+            './assets/reactjs.svg',
+            './assets/tailwind-icon.svg',
+            './assets/git.svg',
+            './assets/github-icon.svg',
+        ],
+        repo: 'https://github.com/francojnieva/Clon-Spotify.git'
+    },
+    {
         name: 'Movie Pulse',
         description: 'Aplicación que permite a los usuarios crear cuentas, iniciar sesión, explorar información sobre las películas y agregarlas a favoritos. Desarrollada por un equipo multidisciplinario durante la simulación laboral en No Country.',
         image: './assets/movie-pulse.png',
