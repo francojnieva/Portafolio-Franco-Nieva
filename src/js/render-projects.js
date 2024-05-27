@@ -1,5 +1,19 @@
 const projects = [
     {
+        name: 'Clon Spotify Web',
+        description: 'Este proyecto es un clon de la versión web de Spotify, desarrollado con React.js y Tailwind CSS. Utiliza la API web proporcionada por Spotify para obtener datos como artistas populares, álbumes populares, canciones y más.',
+        image: './assets/spotify.png',
+        textAlt: 'imagen de portada del Clon Spotify Web',
+        titleImg: 'Clon Spotify Web',
+        technologies: [
+            './assets/reactjs.svg',
+            './assets/tailwind-icon.svg',
+            './assets/git.svg',
+            './assets/github-icon.svg',
+        ],
+        repo: 'https://github.com/francojnieva/Clon-Spotify.git'
+    },
+    {
         name: 'Royal - Relojería',
         description:'Proyecto Final realizado en el curso de React JS en Coder House. Muestra una gran variedad de relojes. Utiliza Firebase Firestore como base de datos para almacenar y recuperar información sobre los productos.',
         image: './assets/royal.png',
@@ -28,20 +42,6 @@ const projects = [
         repo: 'https://github.com/ErikaCV/proyecto-final.git'
     },
     {
-        name: 'Clon Spotify Web',
-        description: 'Este proyecto es un clon de la versión web de Spotify, desarrollado con React.js y Tailwind CSS. Utiliza la API web proporcionada por Spotify para obtener datos como artistas populares, álbumes populares, canciones y más.',
-        image: './assets/spotify.png',
-        textAlt: 'imagen de portada del Clon Spotify Web',
-        titleImg: 'Clon Spotify Web',
-        technologies: [
-            './assets/reactjs.svg',
-            './assets/tailwind-icon.svg',
-            './assets/git.svg',
-            './assets/github-icon.svg',
-        ],
-        repo: 'https://github.com/francojnieva/Clon-Spotify.git'
-    },
-    {
         name: 'Movie Pulse',
         description: 'Aplicación que permite a los usuarios crear cuentas, iniciar sesión, explorar información sobre las películas y agregarlas a favoritos. Desarrollada por un equipo multidisciplinario durante la simulación laboral en No Country.',
         image: './assets/movie-pulse.png',
@@ -54,48 +54,6 @@ const projects = [
             './assets/trello-icon.svg',
         ],
         repo: 'https://github.com/No-Country/C16-39-m-java.git'
-    },
-    {
-        name: 'Portafolio Personal',
-        description: 'Descubre mis proyectos personales y grupales, mis conocimientos y las tecnologías que uso en el día a día como Desarrollador Frontend. Conecta conmigo a través de mis redes o por medio de un formulario de contacto.',
-        image: './assets/portafolio.png',
-        textAlt: 'imagen de portada de Portafolio',
-        titleImg: 'Portafolio',
-        technologies: [
-            './assets/html.svg',
-            './assets/tailwind-icon.svg',
-            './assets/js-icon.svg',
-            './assets/git.svg',
-        ],
-        repo: 'https://github.com/francojnieva/Portafolio-Franco-Nieva.git'
-    },
-    {
-        name: 'Dashboard Tienda',
-        description: 'Con este proyecto puse en práctica mis habilidades de maquetación y diseño con Tailwind CSS. Sigo un diseño de autor, el mismo no cuenta con formato móvil y tablet, por lo que implemento un estilo y un layout responsivo.',
-        image: './assets/dashborad-tienda.png',
-        textAlt: 'imagen de portada de Dashboard Tienda de Comida',
-        titleImg: 'Dashboard Tienda de Comida',
-        technologies: [
-            './assets/html.svg',
-            './assets/tailwind-icon.svg',
-            './assets/js-icon.svg',
-            './assets/git.svg',
-        ],
-        repo: 'https://github.com/francojnieva/Dashboard-Food.git'
-    },
-    {
-        name: 'ClimaApp',
-        description: 'Con este proyecto puedes obtener información climática de las ciudades del mundo a través de la API de OpenWeatherMap. Puedes ver la temperatura actual, la sensación térmica, la temp. máxima y mínima y la humedad.',
-        image: './assets/clima-app.png',
-        textAlt: 'imagen de portada del proyecto ClimaApp',
-        titleImg: 'ClimaApp',
-        technologies: [
-            './assets/html.svg',
-            './assets/bootstrap-icon.svg',
-            './assets/js-icon.svg',
-            './assets/git.svg',
-        ],
-        repo: 'https://github.com/francojnieva/app-clima.git'
     },
     {
         name: 'Salud Integral Psi',
